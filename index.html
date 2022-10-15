@@ -20,7 +20,7 @@
       <div class="nav">
         <ul>
           <li><a href="#" style="color: #7f97ff">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Portfulio</a></li>
           <li><a href="#">Pricing</a></li>
@@ -28,22 +28,35 @@
         </ul>
       </div>
     </header>
-    <!--Header Close-->
-    <!--Body On-->
-    <section>
+    <!--Header End-->
+
+    <!--Body Starts-->
+    <section class="sec1">
       <div class="halfleft">
-        <h6>THIS IS ME</h6>
-        <br />
+        <h3>THIS IS ME</h3>
+
         <h1>M S KAMRAN</h1>
         <p>
           Full Stack Web Devoloper, Photo Grapher, Data Analytics, Tech
           Enthusiast ,Entrepreneur
         </p>
         <input type="button" value="Download CV" />
+        <div class="time">
+          <script language="Javascript">
+            document.write(
+              "This page was last modified on: " + document.lastModified + ""
+            );
+            function getURL() {
+              alert("The URL of this page is: " + window.location.href);
+            }
+          </script>
+          <button type="button" onclick="getURL();">Get Page URL</button>
+        </div>
       </div>
       <div class="halfright">
-        <img src="./MSKamran.png" alt="MSKamrans Photo" />
+        <img src="./MSKamran.png" alt="MSKamran Photo" />
       </div>
     </section>
   </body>
 </html>
+<!--Body End-->

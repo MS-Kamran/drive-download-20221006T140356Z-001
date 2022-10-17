@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assign.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Assignment 2: JavaScript Programming</h1>
+
+    <!--Quote Box Start-->
+    <section class="quote">
+      <h2>Quote Box</h2>
+
+      <div class="quobox" id="colorchange">
+        <p>True wisdom comes not from knowledge, but from understanding.</p>
+      </div>
+
+      <!--Click Button Start-->
+      <div class="button">
+        <!--Button 1-->
+        <br />
+        <button class="butn1" type="button" onclick="changeStyle()">
+          Click Me For Color Change
+        </button>
+        <script>
+          function changeStyle() {
+            var element = document.getElementById("colorchange");
+            element.style.backgroundColor = "#76EF00";
+            element.style.color = "#040301";
+            element.style.border = "5px solid #1A9FE4";
+          }
+        </script>
+        <br />
+        <br />
+
+        <!--Button 2-->
+        <button class="butn2" type="button" onclick="changeStyle1()">
+          Click Me For Color Change
+        </button>
+        <script>
+          function changeStyle1() {
+            var element = document.getElementById("colorchange");
+            element.style.backgroundColor = "#1A9FE4";
+            element.style.color = "#DCDEE1";
+            element.style.border = "5px solid #F20000";
+          }
+        </script>
+        <br />
+        <br />
+
+        <!--Button 3-->
+        <button class="butn3" type="button" onclick="changeStyle2()">
+          Click Me For Color Change
+        </button>
+        <script>
+          function changeStyle2() {
+            var element = document.getElementById("colorchange");
+            element.style.backgroundColor = "#F25A1D";
+            element.style.color = "#040301";
+            element.style.border = "5px solid #76EF00";
+          }
+        </script>
+        <br />
+        <br />
+
+        <!--Button 4-->
+        <button class="butn4" type="button" onclick="changeStyle3()">
+          Click Me For Color Change
+        </button>
+        <script>
+          function changeStyle3() {
+            var element = document.getElementById("colorchange");
+            element.style.backgroundColor = "#F20000";
+            element.style.color = "#DCDEE1";
+            element.style.border = "5px solid #040301";
+          }
+        </script>
+      </div>
+      <!--Click Button End-->
+    </section>
+    <!--Quote Box End-->
+
+    <!--Hero Converter Start-->
+    <section class="convertar">
+      <div>
+        <h2>Hero Converter</h2>
+        <label for="convertar">Choose a Option:</label>
+
+        <select name="convertar" id="convertar">
+          <option value="Kilograms">Kilograms To Pound</option>
+          <option value="Pornds">Pornds To Kilograms</option>
+        </select>
+        <br /><br />
+        <label for="number">Inpuit a Number:</label>
+        <input type="number" id="numb" value="0" name="numb" /><br />
+        <button onclick="myFunction()">Submit</button>
+        <p>Result : <span id="output"> </span></p>
+        <br />
+      </div>
+      <script>
+        console.log("Average grade: ");
+        console.log(collection);
+        console.log(val);
+        console.log(collection === "Kilograms");
+
+        function myFunction() {
+          const collection = document.getElementById("convertar").value;
+          var val = document.getElementById("numb").value;
+
+          //Code test
+          //console.log("Average grade: ");
+          //console.log(collection);
+          //console.log(val);
+          //console.log(collection === "Kilograms");
+
+          if (collection === "Kilograms") {
+            document.getElementById("output").innerHTML = val / 2.2046;
+          } else {
+            document.getElementById("output").innerHTML = val / 0.4536;
+          }
+        }
+      </script>
+    </section>
+    <!--Hero Converter End-->
+
+    <!--Hero Converter Min Max Start-->
+    <h2>Max, Min, Sum, Average & Reverse</h2>
+    <!--Hero Converter Min Max Eid-->
+
+    <!--Hero Converter Magic Start-->
+    <h2>Magic!: Box</h2>
+    <!--Hero Converter Magic End-->
+  </body>
+</html>

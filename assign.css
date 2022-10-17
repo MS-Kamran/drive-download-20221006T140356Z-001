@@ -1,0 +1,104 @@
+body {
+  background-color: rgb(0, 0, 0);
+}
+h1 {
+  color: aliceblue;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+
+/*Quote Box Start*/
+.quote {
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.quote .quobox {
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  width: 40%;
+  height: auto;
+  font-weight: bold;
+  border: 5px solid green;
+  background-color: rgb(241, 225, 2);
+  color: red;
+  font-size: 20px;
+}
+
+.button {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Button Desing Start */
+.butn1 {
+  background-color: #76ef00; /* Green */
+  border: none;
+  color: #040301;
+  padding: 15px 32px;
+  border: 3px solid #1a9fe4;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.butn2 {
+  background-color: #1a9fe4;
+  border: none;
+  color: #dcdee1;
+  padding: 15px 32px;
+  border: 3px solid #f20000;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.butn3 {
+  background-color: #f25a1d;
+  border: none;
+  color: #040301;
+  padding: 15px 32px;
+  border: 3px solid #76ef00;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.butn4 {
+  background-color: #f20000;
+  border: none;
+  color: #dcdee1;
+  padding: 15px 32px;
+  border: 3px solid #040301;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+/* Button Desing End*/
+
+/*Quote Box End*/
+
+.convertar {
+  margin: auto;
+  width: 70%;
+  height: 500px;
+  border: 3px solid #73ad21;
+  background-color: rgb(255, 255, 255);
+}

@@ -11,9 +11,9 @@ h2 {
 
 /*Quote Box Start*/
 .quote {
-  align-items: center;
+  margin: auto;
+  width: 80%;
   height: 500px;
-  width: 100%;
   background-color: rgb(255, 255, 255);
 }
 .quote .quobox {
@@ -95,10 +95,65 @@ h2 {
 
 /*Quote Box End*/
 
+/*Converter Box Start*/
 .convertar {
   margin: auto;
-  width: 70%;
-  height: 500px;
-  border: 3px solid #73ad21;
+  width: 40%;
+  height: 250px;
   background-color: rgb(255, 255, 255);
+}
+/*Converter Box End*/
+
+/*Min MAx Box Start*/
+.minmax {
+  margin: auto;
+  width: 50%;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+}
+.minmaxsum {
+  text-align: center;
+}
+/*Min MAx Box End*/
+
+/*magic Box Design Start*/
+.magic {
+  margin: auto;
+  width: 90%;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+}
+
+.magicbox {
+  margin: auto;
+  width: 60%;
+  height: 400px;
+  background-color: rgb(255, 232, 161);
+  border: 3px solid #006a71;
+}
+
+.functionbutton {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+#magic-input {
+  box-sizing: border-box;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #0d1b2a;
+  font-size: 1.3rem;
+  letter-spacing: 0.25rem;
+  background-color: #f1f1f1;
+  outline: none;
+  transition: 0.4s;
+  resize: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }

@@ -86,7 +86,7 @@
 
     <!--Hero Converter Start-->
     <section class="convertar">
-      <div>
+      <div class="conv">
         <h2>Hero Converter</h2>
         <label for="convertar">Choose a Option:</label>
 
@@ -128,11 +128,122 @@
     <!--Hero Converter End-->
 
     <!--Hero Converter Min Max Start-->
-    <h2>Max, Min, Sum, Average & Reverse</h2>
-    <!--Hero Converter Min Max Eid-->
+    <section class="minmax">
+      <div class="minmaxsum">
+        <h2>Max, Min, Sum, Average & Reverse</h2>
+
+        <!--Take Input-->
+        <label for="numbseries">Inpuit a Series of Number:</label>
+        <input type="text" id="innumb" placeholder="1,2,3" />
+
+        <!--Show Output-->
+
+        <p>MAX :</p>
+        <p id="max">_____</p>
+        <p>MIN :</p>
+        <p id="min">_____</p>
+        <p>SUM :</p>
+        <p id="sum">_____</p>
+        <p>AVERAGE :</p>
+        <p id="avg">_____</p>
+        <p>REVERSE :</p>
+        <p id="rev">_____</p>
+
+        <!--JS Logic-->
+        <script>
+          const chg = document.getElementById("innumb");
+
+          chg.addEventListener("input", chnage);
+
+          function chnage(e) {
+            //Take input and convert in to array
+            var calcvalue = document.getElementById("innumb").value;
+            calcvalue = calcvalue.replace(/\s+/g, "");
+            let calculateArray = calcvalue.split(",");
+            calculateArray = calculateArray.filter((n) => n);
+
+            //Call Functions
+            console.log(Math.max(...calculateArray));
+            document.getElementById("max").innerHTML = Math.max(
+              ...calculateArray
+            );
+
+            console.log(Math.min(...calculateArray));
+            document.getElementById("min").innerHTML = Math.min(
+              ...calculateArray
+            );
+
+            console.log(sum(calculateArray));
+            document.getElementById("sum").innerHTML = sum(calculateArray);
+
+            console.log(avg(calculateArray));
+            document.getElementById("avg").innerHTML = avg(calculateArray);
+
+            console.log(calculateArray.reverse());
+            document.getElementById("rev").innerHTML = calculateArray.reverse();
+          }
+
+          //sum
+          function sum(calculateArray) {
+            var sum = 0;
+            for (var i = 0; i < calculateArray.length; i++) {
+              sum += parseFloat(calculateArray[i]);
+            }
+            return sum;
+          }
+
+          //Average
+          function avg(calculateArray) {
+            var sum = 0;
+            for (var i = 0; i < calculateArray.length; i++) {
+              sum += parseFloat(calculateArray[i]);
+            }
+            return sum / calculateArray.length;
+          }
+
+          //Revarse
+          //function rev(calculateArray) {
+        </script>
+      </div>
+    </section>
+    <!--Hero Converter Min Max End-->
 
     <!--Hero Converter Magic Start-->
-    <h2>Magic!: Box</h2>
+    <section class="magic">
+      <div class="magicbox">
+        <h2>Magic!: Box</h2>
+        <textarea id="magic-input" rows="11"></textarea>
+      </div>
+
+      <!--Buttons-->
+      <div class="functionbutton">
+        <button class="clear" type="button" onclick="clearit()">
+          Clear IT
+        </button>
+
+        <button class="capitalze" type="button" onclick="capitalze()">
+          Capitalze
+        </button>
+
+        <button class="sort" type="button" onclick="sort()">Sort</button>
+
+        <button class="reverse" type="button" onclick="reverse()">
+          Reverse
+        </button>
+
+        <button class="blank" type="button" onclick="blank()">
+          Srtip Blank
+        </button>
+
+        <button class="addnumb" type="button" onclick="addnumb()">
+          Add Numbers
+        </button>
+
+        <button class="shuffle" type="button" onclick="shuffle()">
+          Shuffle
+        </button>
+      </div>
+    </section>
     <!--Hero Converter Magic End-->
   </body>
 </html>

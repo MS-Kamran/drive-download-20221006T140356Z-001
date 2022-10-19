@@ -180,7 +180,7 @@
             document.getElementById("avg").innerHTML = avg(calculateArray);
 
             console.log(calculateArray.reverse());
-            document.getElementById("rev").innerHTML = calculateArray.reverse();
+            rev(calculateArray);
           }
 
           //sum
@@ -202,7 +202,13 @@
           }
 
           //Revarse
-          //function rev(calculateArray) {
+          function rev(calculateArray) {
+            calculateArray.reverse();
+            for (var i = 0; i < calculateArray.length; i++) {
+              calculateArray[i] = ` ${calculateArray[i]}`;
+            }
+            document.getElementById("rev").innerHTML = calculateArray;
+          }
         </script>
       </div>
     </section>
@@ -243,6 +249,20 @@
           Shuffle
         </button>
       </div>
+      <script>
+        function clearit() {
+          document.getElementById("magic-input").value = "";
+        }
+        function capitalze() {
+          var uptxt = document.getElementById("magic-input").value;
+          document.getElementById("magic-input").value = uptxt.toUpperCase();
+        }
+        function sort() {}
+        function reverse() {}
+        function blank() {}
+        function addnumb() {}
+        function shuffle() {}
+      </script>
     </section>
     <!--Hero Converter Magic End-->
   </body>

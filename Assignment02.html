@@ -14,71 +14,43 @@
     <!--Quote Box Start-->
     <section class="quote">
       <h2>Quote Box</h2>
+      <div class="maindiv">
+        <div class="quobox" id="colorchange">
+          <p>True wisdom comes not from knowledge, but from understanding.</p>
+        </div>
 
-      <div class="quobox" id="colorchange">
-        <p>True wisdom comes not from knowledge, but from understanding.</p>
-      </div>
+        <!--Click Button Start-->
+        <div class="button">
+          <!--Button 1-->
+          <br />
+          <button class="butn1" type="button" onclick="changeStyle()">
+            Color
+          </button>
 
-      <!--Click Button Start-->
-      <div class="button">
-        <!--Button 1-->
-        <br />
-        <button class="butn1" type="button" onclick="changeStyle()">
-          Click Me For Color Change
-        </button>
-        <script>
-          function changeStyle() {
-            var element = document.getElementById("colorchange");
-            element.style.backgroundColor = "#76EF00";
-            element.style.color = "#040301";
-            element.style.border = "5px solid #1A9FE4";
-          }
-        </script>
-        <br />
-        <br />
+          <br />
+          <br />
 
-        <!--Button 2-->
-        <button class="butn2" type="button" onclick="changeStyle1()">
-          Click Me For Color Change
-        </button>
-        <script>
-          function changeStyle1() {
-            var element = document.getElementById("colorchange");
-            element.style.backgroundColor = "#1A9FE4";
-            element.style.color = "#DCDEE1";
-            element.style.border = "5px solid #F20000";
-          }
-        </script>
-        <br />
-        <br />
+          <!--Button 2-->
+          <button class="butn2" type="button" onclick="changeStyle1()">
+            Color
+          </button>
 
-        <!--Button 3-->
-        <button class="butn3" type="button" onclick="changeStyle2()">
-          Click Me For Color Change
-        </button>
-        <script>
-          function changeStyle2() {
-            var element = document.getElementById("colorchange");
-            element.style.backgroundColor = "#F25A1D";
-            element.style.color = "#040301";
-            element.style.border = "5px solid #76EF00";
-          }
-        </script>
-        <br />
-        <br />
+          <br />
+          <br />
 
-        <!--Button 4-->
-        <button class="butn4" type="button" onclick="changeStyle3()">
-          Click Me For Color Change
-        </button>
-        <script>
-          function changeStyle3() {
-            var element = document.getElementById("colorchange");
-            element.style.backgroundColor = "#F20000";
-            element.style.color = "#DCDEE1";
-            element.style.border = "5px solid #040301";
-          }
-        </script>
+          <!--Button 3-->
+          <button class="butn3" type="button" onclick="changeStyle2()">
+            Color
+          </button>
+
+          <br />
+          <br />
+
+          <!--Button 4-->
+          <button class="butn4" type="button" onclick="changeStyle3()">
+            Color
+          </button>
+        </div>
       </div>
       <!--Click Button End-->
     </section>
@@ -89,41 +61,19 @@
       <div class="conv">
         <h2>Hero Converter</h2>
         <label for="convertar">Choose a Option:</label>
-
+        <br />
         <select name="convertar" id="convertar">
-          <option value="Kilograms">Kilograms To Pound</option>
-          <option value="Pornds">Pornds To Kilograms</option>
+          <option value="Kilograms">KG To Pound</option>
+          <option value="Pornds">Pornds To KG</option>
         </select>
         <br /><br />
-        <label for="number">Inpuit a Number:</label>
-        <input type="number" id="numb" value="0" name="numb" /><br />
+        <label for="number">Inpuit a Number:</label><br />
+        <input type="number" id="numb" value="0" name="numb" /><br /><br />
         <button onclick="myFunction()">Submit</button>
         <p>Result : <span id="output"> </span></p>
         <br />
       </div>
-      <script>
-        console.log("Average grade: ");
-        console.log(collection);
-        console.log(val);
-        console.log(collection === "Kilograms");
-
-        function myFunction() {
-          const collection = document.getElementById("convertar").value;
-          var val = document.getElementById("numb").value;
-
-          //Code test
-          //console.log("Average grade: ");
-          //console.log(collection);
-          //console.log(val);
-          //console.log(collection === "Kilograms");
-
-          if (collection === "Kilograms") {
-            document.getElementById("output").innerHTML = val / 2.2046;
-          } else {
-            document.getElementById("output").innerHTML = val / 0.4536;
-          }
-        }
-      </script>
+      <script></script>
     </section>
     <!--Hero Converter End-->
 
@@ -139,18 +89,19 @@
         <!--Show Output-->
 
         <p>MAX :</p>
-        <p id="max">_____</p>
+        <p id="max"><br /></p>
         <p>MIN :</p>
-        <p id="min">_____</p>
+        <p id="min"><br /></p>
         <p>SUM :</p>
-        <p id="sum">_____</p>
+        <p id="sum"><br /></p>
         <p>AVERAGE :</p>
-        <p id="avg">_____</p>
+        <p id="avg"><br /></p>
         <p>REVERSE :</p>
-        <p id="rev">_____</p>
+        <p id="rev"><br /></p>
 
         <!--JS Logic-->
         <script>
+          //Hero Converter Min Max
           const chg = document.getElementById("innumb");
 
           chg.addEventListener("input", chnage);
@@ -400,5 +351,6 @@
       </script>
     </section>
     <!--Hero Converter Magic End-->
+    <script src="myScript.js"></script>
   </body>
 </html>

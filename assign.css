@@ -1,94 +1,98 @@
+* {
+  scroll-behavior: smooth;
+}
 body {
-  background-color: rgb(0, 0, 0);
+  background-image: url("./backgroundimage.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /*background-color: #0db4ba;*/
 }
 h1 {
-  color: aliceblue;
+  color: rgb(234, 234, 234);
   text-align: center;
 }
 h2 {
   text-align: center;
+  font-size: 30px;
+  padding-top: 2%;
+  color: #00ffddc7;
 }
 
 /*Quote Box Start*/
 .quote {
+  color: rgb(234, 234, 234);
+  border-radius: 25px;
   margin: auto;
   width: 80%;
-  height: 500px;
-  background-color: rgb(255, 255, 255);
-}
-.quote .quobox {
-  margin: auto;
-  align-items: center;
-  text-align: center;
-  width: 40%;
   height: auto;
-  font-weight: bold;
-  border: 5px solid green;
-  background-color: rgb(241, 225, 2);
-  color: red;
-  font-size: 20px;
+  background-color: rgba(52, 52, 52, 0.687);
+}
+.quote .maindiv {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 2%;
 }
 
-.button {
-  margin: 0;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.quobox {
+  display: block;
+  border-radius: 25px;
+  margin: auto;
+  height: auto;
+  text-align: center;
+  font-weight: bold;
+  border: 4px solid rgba(0, 128, 0, 0.895);
+  background-color: rgba(241, 225, 2, 0.788);
+  color: red;
+  font-size: 22px;
+}
+.quote .maindiv {
+  padding: auto;
+}
+.quote .maindiv .button {
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 /* Button Desing Start */
 .butn1 {
-  background-color: #76ef00; /* Green */
-  border: none;
+  display: block;
+  background-color: #76ef00;
+  height: 50px;
+  width: 50px;
+  border-radius: 40%;
   color: #040301;
-  padding: 15px 32px;
   border: 3px solid #1a9fe4;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
 }
 
 .butn2 {
+  display: block;
   background-color: #1a9fe4;
-  border: none;
-  color: #dcdee1;
-  padding: 15px 32px;
+  height: 50px;
+  width: 50px;
+  border-radius: 40%;
+  color: #040301;
   border: 3px solid #f20000;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
 }
 
 .butn3 {
+  display: block;
   background-color: #f25a1d;
-  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 40%;
   color: #040301;
-  padding: 15px 32px;
   border: 3px solid #76ef00;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
 }
 
 .butn4 {
+  display: block;
   background-color: #f20000;
-  border: none;
-  color: #dcdee1;
-  padding: 15px 32px;
+  height: 50px;
+  width: 50px;
+  border-radius: 40%;
+  color: #040301;
   border: 3px solid #040301;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
 }
 
 /* Button Desing End*/
@@ -97,39 +101,87 @@ h2 {
 
 /*Converter Box Start*/
 .convertar {
+  color: rgb(234, 234, 234);
+  border-radius: 25px;
   margin: auto;
-  width: 40%;
-  height: 250px;
-  background-color: rgb(255, 255, 255);
+  width: 80%;
+  height: auto;
+  background-color: rgba(52, 52, 52, 0.687);
 }
 /*Converter Box End*/
-
+.convertar .conv {
+  text-align: center;
+  margin: auto;
+  padding: auto;
+  align-items: center;
+  font-size: 25px;
+}
+.convertar .conv input {
+  font-size: 18px;
+}
+.convertar .conv select {
+  font-size: 20px;
+  background-color: #00f99e3e; /* Green */
+  text-decoration: wavy;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: auto;
+  border-radius: 20px;
+}
+.convertar .conv button {
+  background-color: #007c4fa2; /* Green */
+  text-decoration: wavy;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: auto;
+  font-size: 20px;
+}
 /*Min MAx Box Start*/
 .minmax {
+  color: rgb(234, 234, 234);
+  font-size: 22px;
+  border-radius: 25px;
   margin: auto;
-  width: 50%;
-  height: 500px;
-  background-color: rgb(255, 255, 255);
+  width: 80%;
+  height: auto;
+  background-color: rgba(52, 52, 52, 0.687);
+  padding-bottom: 10px;
+}
+#innumb {
+  font-size: 18px;
 }
 .minmaxsum {
   text-align: center;
+  padding: 1%;
+  margin-top: 3%;
 }
 /*Min MAx Box End*/
 
 /*magic Box Design Start*/
 .magic {
+  color: rgb(234, 234, 234);
+  border-radius: 25px;
   margin: auto;
-  width: 90%;
-  height: 500px;
-  background-color: rgb(255, 255, 255);
+  width: 80%;
+  height: auto;
+  background-color: rgba(52, 52, 52, 0.687);
 }
 
 .magicbox {
+  color: rgb(234, 234, 234);
+  border-radius: 25px;
   margin: auto;
-  width: 60%;
-  height: 400px;
-  background-color: rgb(255, 232, 161);
-  border: 3px solid #006a71;
+  width: 80%;
+  height: auto;
+  background-color: rgba(52, 52, 52, 0.687);
+  padding-bottom: 5%;
 }
 
 .functionbutton {
@@ -146,7 +198,7 @@ h2 {
   border-radius: 4px;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  color: #0d1b2a;
+  color: #242424;
   font-size: 1.3rem;
   letter-spacing: 0.25rem;
   background-color: #f1f1f1;
@@ -156,4 +208,19 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+}
+
+.magic .functionbutton button {
+  background-color: #007c4fa2; /* Green */
+  text-decoration: wavy;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: auto;
+  font-size: 17px;
 }

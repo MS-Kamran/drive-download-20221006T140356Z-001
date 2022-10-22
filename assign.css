@@ -16,7 +16,7 @@ h2 {
   text-align: center;
   font-size: 30px;
   padding-top: 2%;
-  color: #00ffddc7;
+  color: #00ffddc5;
 }
 
 /*Quote Box Start*/
@@ -120,14 +120,14 @@ h2 {
   font-size: 18px;
 }
 .convertar .conv select {
-  font-size: 20px;
-  background-color: #00f99e3e; /* Green */
+  font-size: 21px; /* Green */
   text-decoration: wavy;
-  font-size: 16px;
-  margin: 4px 2px;
+  margin: auto;
   cursor: pointer;
   padding: auto;
   border-radius: 20px;
+  color: rgb(0, 0, 0);
+  background-color: #007c4ea9;
 }
 .convertar .conv button {
   background-color: #007c4fa2; /* Green */
